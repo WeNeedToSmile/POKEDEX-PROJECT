@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  background-color: rgb(189, 38, 18);
+  background-color: rgb(6, 75, 65);
 }
 
 p {
@@ -26,14 +26,15 @@ p {
   margin-top: 50px;
 }
 
+
 #boxx {
 
   margin-top: 50px;
 
-  width: 65%;
-  height: 5vh;
+  width:10%;
+  height: 50px ;
   border-radius: 500px;
-  border: 5px black solid;
+ /* border: 5px black solid; */
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: x-large;
@@ -41,6 +42,12 @@ p {
 
   text-transform: lowercase;
   text-align: center;
+
+  transition: transform 330ms ease-in-out;
+}
+
+#boxx:focus {
+  transform: scalex(3);
 }
 
 .card {
@@ -55,8 +62,9 @@ p {
   height: 400px;
   width: 300px;
   background-color: #464f56;
-  border-radius: 15px;
+   border-radius: 15px; 
   padding-top: 10px;
+
 
   position: relative;
 
@@ -68,9 +76,15 @@ p {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
-  ;
+
+  transition: transform 330ms ease-in-out;
+  
 
 
+}
+
+.container:hover {
+  transform: scale(1.05);
 }
 
 
@@ -81,6 +95,7 @@ p {
   border-radius: 5px;
   
   padding-top: 5px;
+  
 
 
 }
